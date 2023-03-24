@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/front-end-tcc-2023-1-g2/static/js/main.afb48bc4.js",
+    "static/js/787.e324c446.chunk.js": "/front-end-tcc-2023-1-g2/static/js/787.e324c446.chunk.js",
+    "index.html": "/front-end-tcc-2023-1-g2/index.html",
+    "main.afb48bc4.js.map": "/front-end-tcc-2023-1-g2/static/js/main.afb48bc4.js.map",
+    "787.e324c446.chunk.js.map": "/front-end-tcc-2023-1-g2/static/js/787.e324c446.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.afb48bc4.js"
+  ]
+}
