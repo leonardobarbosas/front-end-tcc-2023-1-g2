@@ -1,7 +1,10 @@
 import "./style.css";
 import "material-symbols";
+import "./Inputs/style.css";
+import { InputSearch } from "./Inputs";
 
-export const Main = () => {
+export const Main = ({ props }) => {
+  props.placeHolder = "Insira seu cep";
   return (
     <main className="box-all-main">
       <div className="local-cep">
@@ -9,16 +12,7 @@ export const Main = () => {
           <h1>Localize-se</h1>
         </div>
         <div className="inputs-search">
-          <div className="inputs">
-            <span className="material-symbols-outlined search-cep">search</span>
-            <input
-              placeholder="Insira seu cep"
-              type="text"
-              className="input cep"
-              name="cep"
-              id="search-cep"
-            />
-          </div>
+          <InputSearch props={props}></InputSearch>
           <div className="input-casa-complemento">
             <div className="inputs">
               <span className="material-symbols-outlined search-number">

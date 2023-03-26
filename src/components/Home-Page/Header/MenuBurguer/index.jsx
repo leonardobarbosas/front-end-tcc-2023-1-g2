@@ -17,11 +17,14 @@ export const MenuBurguer = ({ props }) => {
       <Link to="#" className="menu-burguer-container" onClick={Menu}>
         <i className="menu-burguer"></i>
       </Link>
-      <ul className="text-container">
+      <ul className={"text-container"}>
         <Link to="/localize-se" className="nav-itens">
           <li className={"nav-itens " + props}>Localize-se</li>
         </Link>
-        <li className={"nav-itens " + props}>Motoristas</li>
+        <Link to="/motoristas" className="nav-itens">
+          <li className={"nav-itens " + props}>Motoristas</li>
+        </Link>
+
         <li className={"nav-itens " + props}>Seus Contratos</li>
       </ul>
     </nav>

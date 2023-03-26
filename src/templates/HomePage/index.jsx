@@ -6,7 +6,7 @@ import "../reset/reset.css";
 function Home({ props }) {
   if (props == true) {
     props = "white";
-  } else {
+  } else if (props == false) {
     props = "black";
   }
 
