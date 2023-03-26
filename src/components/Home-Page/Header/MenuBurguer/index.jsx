@@ -14,9 +14,9 @@ export const MenuBurguer = ({ props }) => {
 
   return (
     <nav>
-      <a href="/" className="menu-burguer-container" onClick={Menu}>
+      <Link to="#" className="menu-burguer-container" onClick={Menu}>
         <i className="menu-burguer"></i>
-      </a>
+      </Link>
       <ul className="text-container">
         <Link to="/localize-se" className="nav-itens">
           <li className={"nav-itens " + props}>Localize-se</li>
