@@ -1,7 +1,7 @@
-import Home from "./templates/HomePage";
+import RoutesApp from "./routes/RoutesApp";
 
 function App() {
-  return <Home></Home>;
+  return <RoutesApp />;
 }
 
 export default App;

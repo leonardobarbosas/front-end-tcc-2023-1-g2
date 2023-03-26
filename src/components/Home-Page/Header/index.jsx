@@ -2,11 +2,11 @@ import { Logo } from "./Logo";
 import { MenuBurguer } from "./MenuBurguer";
 import "./style.css";
 
-export const Header = () => {
+export const Header = ({ props }) => {
   return (
     <header>
-      <Logo></Logo>
-      <MenuBurguer></MenuBurguer>
+      <Logo props={props}></Logo>
+      <MenuBurguer props={props}></MenuBurguer>
     </header>
   );
 };

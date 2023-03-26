@@ -1,7 +1,7 @@
 import "material-symbols";
 import "./style.css";
 
-export const Logo = () => {
+export const Logo = ({ props }) => {
   return (
     <div className="logo-container">
       <a href="/">
@@ -9,7 +9,7 @@ export const Logo = () => {
           <div className="ball">
             <span className="material-symbols-outlined">airport_shuttle</span>
           </div>
-          <div className="name_logo_container">
+          <div className={props}>
             <span className="name">Vanbora</span>
           </div>
         </div>

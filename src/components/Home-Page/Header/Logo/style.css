@@ -20,8 +20,12 @@
   padding-left: 5px;
 }
 
-.name_logo_container {
+.white {
   color: white;
+}
+
+.black {
+  color: black;
 }
 
 .name {
