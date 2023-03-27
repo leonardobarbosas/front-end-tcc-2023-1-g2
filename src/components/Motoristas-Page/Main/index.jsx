@@ -17,19 +17,14 @@ export const Main = ({ props }) => {
 
   useEffect(() => {
     const carregarMotoristas = async () => {
-      const response = await fetch("http://localhost:3030/users");
-      const drivers = await response.json();
-      setDriver(drivers.users);
+      const response = await fetch("http://localhost:3030/drivers");
+      const [drivers] = await Promise.all([response]);
+      const driver = await drivers.json();
+      setDriver(driver.drivers);
     };
 
     carregarMotoristas();
   }, []);
-
-  console.log(
-    driver.map((index) => {
-      return index.nome;
-    })
-  );
 
   return (
     <main>
@@ -38,9 +33,20 @@ export const Main = ({ props }) => {
       </div>
       <div className="box-input-filter">
         <InputSearch props={props}></InputSearch>
+        <select name="filtros" id="select-filter-container">
+          <option value="">
+            <p>a</p>
+          </option>
+          <option value="">
+            <p>b</p>
+          </option>
+          <option value="">
+            <p>c</p>
+          </option>
+        </select>
       </div>
       <div className="box-motoristas-card">
-        <Card props={driver}></Card>
+        <Card driver={driver}></Card>
       </div>
     </main>
   );

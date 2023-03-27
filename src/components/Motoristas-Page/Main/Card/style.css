@@ -1,0 +1,76 @@
+.card-driver {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55vw;
+  height: 28vh;
+  background-color: white;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+.container-image {
+  display: flex;
+  height: 100%;
+  padding: 30px;
+}
+
+.container-image img {
+  width: 280px;
+  border-radius: 20px;
+}
+
+.container-all-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.nome-score {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.nome-motorista {
+  font-weight: 800;
+}
+
+.infos-contratar {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.infos-motorista {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.info {
+  font-size: 1.4rem;
+}
+
+.button-contratar {
+  display: flex;
+  width: 260px;
+}
+
+.button-contratar button {
+  width: 100%;
+  height: 6vh;
+  border-radius: 20px;
+  background-color: var(--button-contract-yellow);
+  border: none;
+  font-size: xx-large;
+}

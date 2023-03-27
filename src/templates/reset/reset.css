@@ -29,5 +29,6 @@ button {
 :root {
   --main-yellow: #e0b441;
   --text-color: #232323;
-  --body-yellow: #fffcf2;
+  --body-yellow: #fff7db;
+  --button-contract-yellow: #ffda29;
 }

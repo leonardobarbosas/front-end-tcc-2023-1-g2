@@ -1,7 +1,6 @@
 .body-motorista {
   display: flex;
   flex-direction: column;
-  width: 100%;
   background-color: var(--body-yellow);
-  height: 100%;
+  gap: 40px;
 }
