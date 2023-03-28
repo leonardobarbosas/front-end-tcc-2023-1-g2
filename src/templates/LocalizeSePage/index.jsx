@@ -3,11 +3,11 @@ import { Main } from "../../components/LocalizeSe-Page/Main";
 import "../reset/reset.css";
 import "./body.css";
 
-function LocalizeSe({ props }) {
+function LocalizeSe() {
   return (
     <>
       <div className="body-localize-se">
-        <Main props={props}></Main>
+        <Main></Main>
         <Footer></Footer>
       </div>
     </>

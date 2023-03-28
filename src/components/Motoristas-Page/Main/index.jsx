@@ -4,14 +4,11 @@ import { Card } from "./Card";
 import "./style.css";
 
 export const Main = ({ props }) => {
-  /* let [responseData, setResponseData] = React.useState("");
-
-  const fetchData = () => {
-    api.get("drivers").then((response) => {
-      setResponseData(response.data);
-      console.log(response);
-    });
-  }; */
+  const itensInput = {
+    placeHolder: "Search...",
+    id: "search-driver",
+    class: "search-driver-input",
+  };
 
   const [driver, setDriver] = useState([]);
 
@@ -32,7 +29,7 @@ export const Main = ({ props }) => {
         <h1>Motoristas</h1>
       </div>
       <div className="box-input-filter">
-        <InputSearch props={props}></InputSearch>
+        <InputSearch props={itensInput}></InputSearch>
         <select name="filtros" id="select-filter-container">
           <option value="">
             <p>a</p>

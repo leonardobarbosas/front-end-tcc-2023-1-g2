@@ -3,8 +3,10 @@ import "material-symbols";
 import "./Inputs/style.css";
 import { InputSearch } from "./Inputs";
 
-export const Main = ({ props }) => {
-  props.placeHolder = "Insira seu cep";
+export const Main = () => {
+  const props = {
+    placeHolder: "Insira seu cep...",
+  };
   return (
     <main className="box-all-main">
       <div className="local-cep">

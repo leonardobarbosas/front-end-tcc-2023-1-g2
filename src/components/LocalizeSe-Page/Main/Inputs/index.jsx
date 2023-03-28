@@ -9,7 +9,7 @@ export const InputSearch = ({ props }) => {
         type="text"
         className="input cep"
         name="cep"
-        id="search-cep"
+        id={props.id}
       />
     </div>
   );
