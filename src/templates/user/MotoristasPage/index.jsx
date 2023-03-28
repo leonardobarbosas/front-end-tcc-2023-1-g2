@@ -1,8 +1,8 @@
-import { HeaderMotoristas } from "../../components/Motoristas-Page/Header";
+import { HeaderMotoristas } from "../../../components/Motoristas-Page/Header";
 import "./body.css";
-import "../reset/reset.css";
-import { Main } from "../../components/Motoristas-Page/Main";
-import { FooterMotoristas } from "../../components/Motoristas-Page/Footer";
+import "../../reset/reset.css";
+import { Main } from "../../../components/Motoristas-Page/Main";
+import { FooterMotoristas } from "../../../components/Motoristas-Page/Footer";
 
 export default function MotoristasPage({ props }) {
   return (

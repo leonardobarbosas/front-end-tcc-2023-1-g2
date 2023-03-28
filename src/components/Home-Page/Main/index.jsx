@@ -2,7 +2,7 @@ import "./style.css";
 
 export const Main = () => {
   return (
-    <main>
+    <main className="container-main-home">
       <div className="vanbora-container">
         <div className="vanbora-title">
           <p className="vanbora-title1" id="vanbora-title">

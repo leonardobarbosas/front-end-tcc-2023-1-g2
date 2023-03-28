@@ -26,6 +26,9 @@ export const MenuBurguer = ({ props }) => {
         </Link>
 
         <li className={"nav-itens " + props}>Seus Contratos</li>
+        <Link to="/login">
+          <button>Entrar / Registrar</button>
+        </Link>
       </ul>
     </nav>
   );

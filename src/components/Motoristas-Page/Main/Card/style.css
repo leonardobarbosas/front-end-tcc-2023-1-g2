@@ -1,7 +1,6 @@
 .card-driver {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 55vw;
   height: 28vh;
   background-color: white;
@@ -16,7 +15,7 @@
 }
 
 .container-image img {
-  width: 280px;
+  width: 222px;
   border-radius: 20px;
 }
 
@@ -73,4 +72,30 @@
   background-color: var(--button-contract-yellow);
   border: none;
   font-size: xx-large;
+}
+
+@media (max-width: 1404px) {
+  .card-driver {
+    width: 800px;
+  }
+}
+
+@media (max-width: 870px) {
+  .card-driver {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infos-contratar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container-image {
+    height: 350px;
+  }
 }

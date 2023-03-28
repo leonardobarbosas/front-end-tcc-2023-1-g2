@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { carregarMotoristas } from "../../../api/driver/loadDrivers";
 import { InputSearch } from "../../LocalizeSe-Page/Main/Inputs";
 import { Card } from "./Card";
 import "./style.css";
@@ -13,18 +14,11 @@ export const Main = ({ props }) => {
   const [driver, setDriver] = useState([]);
 
   useEffect(() => {
-    const carregarMotoristas = async () => {
-      const response = await fetch("http://localhost:3030/drivers");
-      const [drivers] = await Promise.all([response]);
-      const driver = await drivers.json();
-      setDriver(driver.drivers);
-    };
-
-    carregarMotoristas();
+    carregarMotoristas(setDriver);
   }, []);
 
   return (
-    <main>
+    <main className="container-main-motoristas">
       <div className="box-name-h1">
         <h1>Motoristas</h1>
       </div>

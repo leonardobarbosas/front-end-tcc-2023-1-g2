@@ -17,9 +17,7 @@ export const Main = () => {
           <InputSearch props={props}></InputSearch>
           <div className="input-casa-complemento">
             <div className="inputs">
-              <span className="material-symbols-outlined search-number">
-                search
-              </span>
+              <p className="material-symbols-outlined search-number">search</p>
               <input
                 placeholder="Nº da casa"
                 type="text"
