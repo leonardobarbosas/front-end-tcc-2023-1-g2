@@ -1,3 +1,5 @@
+import "./style.css";
+
 export const RightSide = () => {
   return (
     <div className="right-side">

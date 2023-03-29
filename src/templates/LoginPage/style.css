@@ -10,3 +10,12 @@
   width: 100vw;
   height: 100vh;
 }
+
+@media (max-width: 1000px) {
+  .body-login-page {
+    background-image: none;
+    gap: 20px;
+    width: auto;
+    height: auto;
+  }
+}

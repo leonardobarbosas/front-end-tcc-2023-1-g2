@@ -1,5 +1,6 @@
 import { LeftSide } from "./LeftSide";
 import { RightSide } from "./RightSide";
+import "./style.css";
 
 export const MainLogin = () => {
   return (
