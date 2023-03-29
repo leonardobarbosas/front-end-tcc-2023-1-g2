@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import Routes from "./routes/Routes";
+import RoutesApp from "./routes/Routes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Routes />
+    <RoutesApp />
   </React.StrictMode>
 );
 

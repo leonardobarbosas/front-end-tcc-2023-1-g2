@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./style.css";
 
 export const RightSide = () => {
@@ -10,9 +11,9 @@ export const RightSide = () => {
       </button>
       <div class="bottom-text">
         <span class="thin-text">Não tem uma conta?</span>
-        <a href="./pages/register_page.html">
+        <Link to="/register">
           <span class="bold-text">Registre-se</span>
-        </a>
+        </Link>
       </div>
     </div>
   );
