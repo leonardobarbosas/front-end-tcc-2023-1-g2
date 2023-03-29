@@ -4,6 +4,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import MotoristasPage from "../templates/user/MotoristasPage";
 import { LoginPage } from "../templates/LoginPage";
 import { RegisterPage } from "../templates/RegisterPage";
+import { Teste } from "../templates/TestePage";
 
 function RoutesApp() {
   return (
@@ -14,6 +15,7 @@ function RoutesApp() {
         <Route element={<Home props={true} />} path="/" />
         <Route Component={LocalizeSe} path="/localize-se" />
         <Route element={<MotoristasPage props={true} />} path="/motoristas" />
+        <Route Component={Teste} path="/teste" />
       </Routes>
     </HashRouter>
   );

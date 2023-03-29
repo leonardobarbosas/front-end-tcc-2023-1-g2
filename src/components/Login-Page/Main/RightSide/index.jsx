@@ -4,15 +4,17 @@ import "./style.css";
 export const RightSide = () => {
   return (
     <div className="right-side">
-      <span class="entry-text">Faça o login e conheça a nossa plataforma</span>
-      <button type="button" class="google-register">
-        <i class="fa-regular fa-g"></i>
+      <span className="entry-text">
+        Faça o login e conheça a nossa plataforma
+      </span>
+      <button type="button" className="google-register">
+        <i className="fa-regular fa-g"></i>
         Continuar com Google
       </button>
-      <div class="bottom-text">
-        <span class="thin-text">Não tem uma conta?</span>
+      <div className="bottom-text">
+        <span className="thin-text">Não tem uma conta?</span>
         <Link to="/register">
-          <span class="bold-text">Registre-se</span>
+          <span className="bold-text">Registre-se</span>
         </Link>
       </div>
     </div>

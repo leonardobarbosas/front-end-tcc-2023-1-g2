@@ -25,15 +25,9 @@ export const Main = ({ props }) => {
       <div className="box-input-filter">
         <InputSearch props={itensInput}></InputSearch>
         <select name="filtros" id="select-filter-container">
-          <option value="">
-            <p>a</p>
-          </option>
-          <option value="">
-            <p>b</p>
-          </option>
-          <option value="">
-            <p>c</p>
-          </option>
+          <option value="">a</option>
+          <option value="">b</option>
+          <option value="">c</option>
         </select>
       </div>
       <div className="box-motoristas-card">
