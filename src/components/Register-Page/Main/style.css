@@ -1,0 +1,13 @@
+.container-main-register-page {
+  display: flex;
+  flex-grow: 1;
+}
+
+@media (max-width: 1000px) {
+  .container-main-register-page {
+    flex-direction: column-reverse;
+    width: auto;
+    height: auto;
+    gap: 30px;
+  }
+}

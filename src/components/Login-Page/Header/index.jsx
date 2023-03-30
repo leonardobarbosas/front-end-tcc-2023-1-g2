@@ -1,8 +1,8 @@
 import { Logo } from "../../Home-Page/Header/Logo";
 
-export const HeaderLogin = () => {
+export const HeaderLogin = ({ props }) => {
   return (
-    <header>
+    <header className={props}>
       <Logo></Logo>
     </header>
   );

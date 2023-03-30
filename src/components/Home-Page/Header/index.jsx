@@ -4,7 +4,7 @@ import "./style.css";
 
 export const Header = ({ props }) => {
   return (
-    <header>
+    <header className="header-logo-menu-burguer">
       <Logo props={props}></Logo>
       <MenuBurguer props={props}></MenuBurguer>
     </header>

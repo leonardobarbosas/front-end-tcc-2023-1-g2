@@ -1,0 +1,57 @@
+.left-side-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15vh;
+  background: var(--main-yellow);
+  flex-grow: 1;
+}
+
+.entry-text {
+  color: var(--text-color);
+  font-size: 3rem;
+  font-weight: 600;
+  width: 40%;
+  text-align: center;
+}
+
+.google_register {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 5rem;
+  border-radius: 10px;
+}
+
+.bottom_text {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.bold_text {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  .entry-text {
+    display: none;
+  }
+  .left-side-register {
+    background: none;
+    gap: 20px;
+    padding-bottom: 20px;
+    flex-grow: 1;
+  }
+  .google-register {
+    border-style: solid;
+    border-color: black;
+    font-size: 0.8rem;
+    padding: 1em;
+  }
+}
