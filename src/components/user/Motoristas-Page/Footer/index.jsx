@@ -1,16 +1,13 @@
-import { Logo } from "../../Home-Page/Header/Logo";
-import { MenuBurguer } from "../../Home-Page/Header/MenuBurguer";
-
+import "./style.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faWhatsapp,
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { Logo } from "../../../Home-Page/Header/Logo";
 
-import "./style.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-export const Footer = () => {
+export const FooterMotoristas = () => {
   return (
     <>
       <footer>
@@ -30,9 +27,6 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer-localization">
-          <div>
-            <MenuBurguer />
-          </div>
           <div className="logo-footer">
             <Logo />
             <span>©Copyright 2023 - Vanbora</span>

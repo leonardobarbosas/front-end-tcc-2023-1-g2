@@ -1,0 +1,17 @@
+.box-all-main-contract {
+  background-color: var(--main-yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.363);
+  gap: 50px;
+}
+
+.contrate-name {
+  font-size: 4rem;
+  font-family: "Mansalva", cursive;
+  text-align: center;
+}

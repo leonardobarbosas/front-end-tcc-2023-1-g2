@@ -26,7 +26,7 @@ export const RightSide = () => {
           <input type="password" id="password" className="input" />
           <button
             onClick={() => {
-              navigation("/");
+              navigation("/choose-page");
             }}
             id="button-form"
             className="button-next"

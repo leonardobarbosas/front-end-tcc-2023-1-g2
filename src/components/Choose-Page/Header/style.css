@@ -1,0 +1,7 @@
+.header-choose-page {
+  display: flex;
+  padding: 25px;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}

@@ -1,10 +1,8 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "./style.css";
 
 export const LeftSide = () => {
   const [props, setProps] = useState([]);
-  const navitage = useNavigate();
 
   const getEmail = (e) => {
     const value = e.target.value;
@@ -52,14 +50,7 @@ export const LeftSide = () => {
           />
         </div>
 
-        <button
-          id="button-form"
-          className="button-next"
-          type="button"
-          onClick={() => {
-            navitage("/teste", { state: props });
-          }}
-        >
+        <button id="button-form" className="button-next" type="button">
           Entrar
         </button>
       </form>

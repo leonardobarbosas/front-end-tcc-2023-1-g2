@@ -1,7 +1,8 @@
 import "./style.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const MenuBurguer = ({ props }) => {
+  const navigate = useNavigate();
   const Menu = () => {
     const menu = document.querySelector(".menu-burguer-container");
 
@@ -18,17 +19,38 @@ export const MenuBurguer = ({ props }) => {
         <i className="menu-burguer"></i>
       </Link>
       <ul className={"text-container"}>
-        <Link to="/localize-se" className="nav-itens">
-          <li className={"nav-itens " + props}>Localize-se</li>
-        </Link>
-        <Link to="/motoristas" className="nav-itens">
-          <li className={"nav-itens " + props}>Motoristas</li>
-        </Link>
+        <li
+          className={"nav-itens " + props}
+          onClick={() => {
+            navigate("/localize-se");
+          }}
+        >
+          Localize-se
+        </li>
+        <li
+          onClick={() => {
+            navigate("/motoristas");
+          }}
+          className={"nav-itens " + props}
+        >
+          Motoristas
+        </li>
 
-        <li className={"nav-itens " + props}>Seus Contratos</li>
-        <Link to="/login">
-          <button>Entrar / Registrar</button>
-        </Link>
+        <li
+          onClick={() => {
+            navigate("/contract");
+          }}
+          className={"nav-itens " + props}
+        >
+          Seus Contratos
+        </li>
+        <button
+          onClick={() => {
+            navigate("/login");
+          }}
+        >
+          Entrar / Registrar
+        </button>
       </ul>
     </nav>
   );

@@ -4,7 +4,13 @@ export const Card = ({ driver }) => {
   return (
     <>
       {driver.map((drivers) => (
-        <div key={drivers.id} className="card-driver">
+        <div
+          onClick={() => {
+            console.log(drivers.id);
+          }}
+          key={drivers.id}
+          className="card-driver"
+        >
           <div className="container-image">
             <img
               src={drivers.foto}
