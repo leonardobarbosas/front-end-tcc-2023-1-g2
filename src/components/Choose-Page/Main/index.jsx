@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import { app } from "../../../firebase/firebaseApp";
 import "./style.css";
 
 export const MainChoosePage = () => {
@@ -13,8 +12,15 @@ export const MainChoosePage = () => {
         <button key="motorista" className="button" type="button">
           Motorista
         </button>
-        <button key="usuario" className="button" type="button">
-          Usuário
+        <button
+          onClick={() => {
+            navigation("/dados-adicionais-user");
+          }}
+          key="usuario"
+          className="button"
+          type="button"
+        >
+          Cliente
         </button>
       </div>
     </main>

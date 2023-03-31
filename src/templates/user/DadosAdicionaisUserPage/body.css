@@ -1,4 +1,4 @@
-.container-body-choose-page {
+.container-body-dados-adicionais-us {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +7,7 @@
   height: 100%;
 }
 
-.container-header-main-choose {
+.container-header-main-footer-da-user {
   display: flex;
   flex-direction: column;
   background-color: var(--main-yellow);

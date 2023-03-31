@@ -1,0 +1,26 @@
+.container-foto-perfil {
+  display: flex;
+  width: 100%;
+  padding: 25px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.img-preview {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.none {
+  display: none;
+}
+.true {
+  display: flex;
+}
+
+.input-picture[type="file"] {
+  display: none;
+}

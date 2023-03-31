@@ -4,7 +4,7 @@ export const carregarMotoristas = (setDriver) => {
   api
     .get("/drivers")
     .then((response) => {
-      setDriver(response.data.drivers);
+      setDriver(response.data.driver);
     })
     .catch((err) => {
       console.log("Erro: " + err);

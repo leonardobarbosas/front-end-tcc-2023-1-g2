@@ -28,10 +28,10 @@ export const MenuBurguer = ({ props }) => {
           Localize-se
         </li>
         <li
-          onClick={() => {
+        /* onClick={() => {
             navigate("/motoristas");
           }}
-          className={"nav-itens " + props}
+          className={"nav-itens " + props} */
         >
           Motoristas
         </li>

@@ -2,8 +2,9 @@ import { useNavigate } from "react-router-dom";
 import { Logo } from "../../Home-Page/Header/Logo";
 import "./style.css";
 
-export const HeaderChoosePage = () => {
+export const HeaderChoosePage = ({ props }) => {
   const navigation = useNavigate();
+
   return (
     <>
       <header className="header-choose-page">
@@ -11,7 +12,7 @@ export const HeaderChoosePage = () => {
         <div className="container-button-voltar">
           <p
             onClick={() => {
-              navigation("/register");
+              navigation(props.url);
             }}
           >
             Voltar

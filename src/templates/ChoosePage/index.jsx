@@ -4,10 +4,14 @@ import "./style.css";
 import "../reset/reset.css";
 
 export default function ChoosePage() {
+  const props = {
+    url: "/register",
+  };
+
   return (
     <div className="container-body-choose-page">
-      <div className="container-header-main">
-        <HeaderChoosePage></HeaderChoosePage>
+      <div className="container-header-main-choose">
+        <HeaderChoosePage props={props}></HeaderChoosePage>
         <MainChoosePage></MainChoosePage>
       </div>
     </div>
