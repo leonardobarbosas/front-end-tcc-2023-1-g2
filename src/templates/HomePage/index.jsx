@@ -1,9 +1,9 @@
-import { Header } from "../../components/Home-Page/Header";
-import { Main } from "../../components/Home-Page/Main";
+import { MainHomePage } from "../../components/Home-Page/Main";
 import "./body.css";
 import "../reset/reset.css";
+import { HeaderHomePage } from "../../components/Home-Page/Header";
 
-function Home({ props }) {
+function HomePage({ props }) {
   if (props == true) {
     props = "white";
   } else if (props == false) {
@@ -13,11 +13,11 @@ function Home({ props }) {
   return (
     <>
       <div className="body-home">
-        <Header props={props}></Header>
-        <Main></Main>
+        <HeaderHomePage props={props}></HeaderHomePage>
+        <MainHomePage></MainHomePage>
       </div>
     </>
   );
 }
 
-export default Home;
+export default HomePage;

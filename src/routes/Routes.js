@@ -1,12 +1,12 @@
-import Home from "../templates/HomePage";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import MotoristasPage from "../templates/user/MotoristasPage";
 import { LoginPage } from "../templates/LoginPage";
 import { RegisterPage } from "../templates/RegisterPage";
 import LocalizeSe from "../templates/user/LocalizeSePage";
 import ChoosePage from "../templates/ChoosePage";
-import Contract from "../templates/user/Contract-page";
 import { DadosAdicionaisUserPage } from "../templates/user/DadosAdicionaisUserPage";
+import HomePage from "../templates/HomePage";
+import ContractPage from "../templates/user/Contract-page";
 
 function RoutesApp() {
   return (
@@ -19,10 +19,10 @@ function RoutesApp() {
           Component={DadosAdicionaisUserPage}
           path="/dados-adicionais-user"
         />
-        <Route element={<Home props={true} />} path="/" />
+        <Route element={<HomePage props={true} />} path="/" />
         <Route element={<MotoristasPage props={true} />} path="/motoristas" />
         <Route element={<LocalizeSe />} path="/localize-se" />
-        <Route Component={Contract} path="/contract" />
+        <Route Component={ContractPage} path="/contract" />
       </Routes>
     </HashRouter>
   );

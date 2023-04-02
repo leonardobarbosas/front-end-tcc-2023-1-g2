@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MenuBurguer } from "../../../Home-Page/Header/MenuBurguer";
 import { Logo } from "../../../Home-Page/Header/Logo";
 
-export const Footer = () => {
+export const FooterLocalizesePage = () => {
   return (
     <>
       <footer>

@@ -1,7 +1,7 @@
 import "./body.css";
 import "../../reset/reset.css";
 import { FooterMotoristas } from "../../../components/user/Motoristas-Page/Footer";
-import { Main } from "../../../components/user/Motoristas-Page/Main";
+import { MainMotoristasPage } from "../../../components/user/Motoristas-Page/Main";
 import { HeaderMotoristas } from "../../../components/user/Motoristas-Page/Header";
 
 export default function MotoristasPage({ props }) {
@@ -9,7 +9,7 @@ export default function MotoristasPage({ props }) {
     <>
       <div className="body-motorista">
         <HeaderMotoristas></HeaderMotoristas>
-        <Main props={props}></Main>
+        <MainMotoristasPage props={props}></MainMotoristasPage>
         <FooterMotoristas></FooterMotoristas>
       </div>
     </>

@@ -4,7 +4,7 @@ import { InputSearch } from "../../LocalizeSe-Page/Main/Inputs";
 import { Card } from "./Card";
 import "./style.css";
 
-export const Main = ({ props }) => {
+export const MainMotoristasPage = ({ props }) => {
   const itensInput = {
     placeHolder: "Search...",
     id: "search-driver",

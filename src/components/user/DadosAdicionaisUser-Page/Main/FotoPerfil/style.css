@@ -2,7 +2,6 @@
   display: flex;
   width: 100%;
   padding: 25px;
-  height: auto;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -23,4 +22,14 @@
 
 .input-picture[type="file"] {
   display: none;
+}
+
+.container-icon-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-icon-picture svg {
+  font-size: 6rem;
 }

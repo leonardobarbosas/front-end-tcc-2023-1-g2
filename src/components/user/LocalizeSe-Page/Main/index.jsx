@@ -3,7 +3,7 @@ import "material-symbols";
 import "./Inputs/style.css";
 import { InputSearch } from "./Inputs";
 
-export const Main = () => {
+export const MainLocalizesePage = () => {
   const props = {
     placeHolder: "Insira seu cep...",
   };

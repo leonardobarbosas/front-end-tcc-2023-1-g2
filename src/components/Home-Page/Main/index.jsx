@@ -1,6 +1,6 @@
 import "./style.css";
 
-export const Main = () => {
+export const MainHomePage = () => {
   return (
     <main className="container-main-home">
       <div className="vanbora-container">
