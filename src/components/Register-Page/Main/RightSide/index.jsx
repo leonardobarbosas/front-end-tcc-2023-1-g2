@@ -1,8 +1,15 @@
 import { useNavigate } from "react-router-dom";
+import { ButtonProximoRegister } from "./Button";
 import "./style.css";
 
 export const RightSide = () => {
   const navigation = useNavigate();
+
+  const propsProximo = {
+    key: "button-form",
+    label: "Próximo",
+    nav: "/choose-page",
+  };
   return (
     <div className="right-side-register">
       <form className="register-form">
@@ -24,16 +31,7 @@ export const RightSide = () => {
             Senha:
           </label>
           <input type="password" id="password" className="input" />
-          <button
-            onClick={() => {
-              navigation("/choose-page");
-            }}
-            id="button-form"
-            className="button-next"
-            type="button"
-          >
-            Próximo
-          </button>
+          <ButtonProximoRegister props={propsProximo}></ButtonProximoRegister>
         </div>
       </form>
     </div>

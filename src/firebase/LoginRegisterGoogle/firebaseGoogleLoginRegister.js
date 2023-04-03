@@ -1,5 +1,4 @@
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { useState } from "react";
 import { app } from "../firebaseApp";
 
 const getInfosUser = async (userInfos, setUserInfos) => {

@@ -1,6 +1,24 @@
-.inputs-more-infos {
+.container-inputs-more-infos {
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
   height: 100%;
-  border: none;
-  background-color: pink;
+  gap: 20px;
+  width: 100%;
+}
+
+.container-all-infos-user {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+}
+
+.container-rg-cpf,
+.container-datanasc-cep {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

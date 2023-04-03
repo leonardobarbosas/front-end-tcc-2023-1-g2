@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ButtonEntrar } from "./Button";
 import "./style.css";
 
 export const LeftSide = () => {
@@ -11,6 +12,12 @@ export const LeftSide = () => {
   const getPassword = (e, email) => {
     const value = e.target.value;
     setProps({ email: email, senha: value });
+  };
+
+  const propsButtonEntrar = {
+    key: "button-form",
+    nav: "/",
+    label: "Entrar",
   };
 
   return (
@@ -49,10 +56,7 @@ export const LeftSide = () => {
             required
           />
         </div>
-
-        <button id="button-form" className="button-next" type="button">
-          Entrar
-        </button>
+        <ButtonEntrar props={propsButtonEntrar}></ButtonEntrar>
       </form>
     </div>
   );

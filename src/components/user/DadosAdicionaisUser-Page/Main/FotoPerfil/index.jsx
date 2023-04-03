@@ -2,25 +2,43 @@ import { useState } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
+import { uploadImage } from "../../../../../firebase/UploadProfilePictures/firebaseUploadProfilePictures";
 
 export const FotoPerfilRegistro = () => {
   const [card, setCardFile] = useState();
   const [classImg, setClassImg] = useState("none");
   const [classIcon, setClassIcon] = useState("true");
+  const [imgFirebase, setImageFirebase] = useState("");
+
+  useEffect(() => {
+    console.log(imgFirebase);
+  }, [imgFirebase]);
 
   return (
     <div className="container-foto-perfil">
       <label className="form-picture-label">
         <p>Foto de Perfil:</p>
         <input
-          onChange={(e) => {
-            OnChangeFunction(e, setCardFile, setClassImg, setClassIcon);
+          onChange={async (e) => {
+            await OnChangeFunction(
+              e,
+              setCardFile,
+              setClassImg,
+              setClassIcon,
+              setImageFirebase
+            );
+
+            console.log(imgFirebase);
           }}
           className="input-picture"
           type="file"
         />
         <div className={`${classIcon} container-icon-picture`}>
-          <FontAwesomeIcon icon={faCamera}></FontAwesomeIcon>
+          <FontAwesomeIcon
+            className={classIcon}
+            icon={faCamera}
+          ></FontAwesomeIcon>
         </div>
         <img className={`img-preview ${classImg}`} src={card} alt="teste" />
       </label>
@@ -28,11 +46,12 @@ export const FotoPerfilRegistro = () => {
   );
 };
 
-const OnChangeFunction = (
+const OnChangeFunction = async (
   e,
   setCardFile,
   setClassForImage,
-  setClassForIcon
+  setClassForIcon,
+  setImageFirebase
 ) => {
   var file = new FileReader();
   file.onload = (e) => {
@@ -40,6 +59,24 @@ const OnChangeFunction = (
     document.querySelector(".img-preview").src = e.target.result;
   };
 
+  const product = e.target.files[0];
+
+  const namePicture = e.target.files[0].name;
+
   setClassForImage("true");
-  setCardFile(file.readAsDataURL(e.target.files[0]));
+  setImageFirebase(namePicture);
+  setCardFile(file.readAsDataURL(product));
+
+  const urlImage = await uploadImage(
+    "users-profile-picture",
+    product,
+    namePicture
+  );
+
+  const photo = {
+    photo: namePicture,
+    url: urlImage,
+  };
+
+  console.log(photo.url);
 };

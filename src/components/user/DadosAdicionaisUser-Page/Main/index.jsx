@@ -9,7 +9,9 @@ export const MainDadosAdicionaisUser = () => {
         <form className="container-form-register">
           <FotoPerfilRegistro></FotoPerfilRegistro>
           <FormFirstInfos></FormFirstInfos>
-          <div></div>
+          <div className="kk">
+            <p>shkjdfjhjaskdjahsdjkajsdbausdbhajisdvyauhbudybaidfbsdufinuyi</p>
+          </div>
         </form>
       </main>
     </>

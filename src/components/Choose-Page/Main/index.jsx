@@ -1,27 +1,25 @@
-import { useNavigate } from "react-router-dom";
+import { ButtonChoose } from "./Button";
 import "./style.css";
 
 export const MainChoosePage = () => {
-  const navigation = useNavigate();
+  const propsButtonCliente = {
+    nav: "/dados-adicionais-user",
+    key: "usuario",
+    label: "Cliente",
+  };
+  const propsButtonMotorista = {
+    nav: "/",
+    key: "motorista",
+    label: "Motorista",
+  };
   return (
     <main className="container-main-choose-page">
       <div className="text-container-choose-page">
         <span className="choose-text">Selecione uma opção para registrar</span>
       </div>
       <div className="buttons-container">
-        <button key="motorista" className="button" type="button">
-          Motorista
-        </button>
-        <button
-          onClick={() => {
-            navigation("/dados-adicionais-user");
-          }}
-          key="usuario"
-          className="button"
-          type="button"
-        >
-          Cliente
-        </button>
+        <ButtonChoose props={propsButtonMotorista}></ButtonChoose>
+        <ButtonChoose props={propsButtonCliente}></ButtonChoose>
       </div>
     </main>
   );
