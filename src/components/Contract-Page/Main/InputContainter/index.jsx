@@ -1,3 +1,5 @@
+import "./style.css";
+
 export const InputContainer = ({ props }) => {
   return (
     <div className="input-container">
