@@ -50,5 +50,6 @@
 }
 
 .container-icon-picture svg {
-  height: 50%;
+  margin: 20px;
+  height: 20vh;
 }
