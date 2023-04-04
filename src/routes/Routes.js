@@ -15,10 +15,7 @@ function RoutesApp() {
         <Route Component={LoginPage} path="/login" />
         <Route Component={RegisterPage} path="/register" />
         <Route Component={ChoosePage} path="/choose-page" />
-        <Route
-          Component={DadosAdicionaisUserPage}
-          path="/dados-adicionais-user"
-        />
+        <Route Component={DadosAdicionaisUserPage} path="/dados-adicionais-user"/>
         <Route element={<HomePage props={true} />} path="/" />
         <Route element={<MotoristasPage props={true} />} path="/motoristas" />
         <Route element={<LocalizeSe />} path="/localize-se" />
